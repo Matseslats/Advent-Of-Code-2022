@@ -13,13 +13,10 @@ for line in lines:
         currentCount += int(line)
     except:
         if currentCount >= currentMax[0]:
-            currentMax[2] = currentMax[1]
-            currentMax[1] = currentMax[0]
-            currentMax[0] = currentCount
+            currentMax[2], currentMax[1], currentMax[0] = currentMax[1], currentMax[0], currentCount
         
         elif currentCount >= currentMax[1]:
-            currentMax[2] = currentMax[1]
-            currentMax[1] = currentCount
+            currentMax[2], currentMax[1] = currentMax[1], currentCount
         
         elif currentCount >= currentMax[2]:
             currentMax[2] = currentCount
