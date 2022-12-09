@@ -18,7 +18,7 @@ for line in f.readlines():
         deltaX = hx-tx
         deltaY = hy-ty
         separation = abs(deltaX) + abs(deltaY)
-        if separation > 2: # Bigger than sqrt 2, move diagonally
+        if separation > 2: # Gap bigger than 2, move diagonally
             if deltaX >= 1:
                 tx += 1
             if deltaX <= -1:
@@ -28,7 +28,7 @@ for line in f.readlines():
             if deltaY <= -1:
                 ty -= 1
             
-        else:
+        else: # Move one direction
             if deltaX > 1:
                 tx += 1
             if deltaX < -1:
