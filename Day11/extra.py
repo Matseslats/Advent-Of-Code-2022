@@ -17,13 +17,7 @@ while True:
     monkeyTrue = int(getLine().split(" ")[-1])
     monkeyFalse = int(getLine().split(" ")[-1])
     mfm *= test
-    # for i in items:
-    #     mfm *= i
     
-    # if operation[0] != "old":
-    #     mfm *= int(operation[0])
-    # if operation[2] != "old":
-    #     mfm *= int(operation[2])
     # print("No:", monkey)
     # print("Items:", items)
     # print("Op:", operation)
